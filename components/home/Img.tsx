@@ -6,8 +6,7 @@ export default function Img(props) {
   var attributes = {
     width: width,
     height: height,
-    layout: layout && "fill",
     objectFit: objectFit,
   };
-  return (<Image src={`/images/${img}`} alt={imgAlt} {...attributes} priority />);
+  return (<Image src={`/images/${img}`} alt={imgAlt} {...attributes} priority layout='fill'/>);
 }
